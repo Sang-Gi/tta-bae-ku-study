@@ -9,4 +9,4 @@ images:
 
 replicas:
   - name: jjya-jjya
-    count: 5
+    count: 7
