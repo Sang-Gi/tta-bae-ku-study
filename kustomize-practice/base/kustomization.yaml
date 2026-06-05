@@ -1,0 +1,4 @@
+resources:
+- test-deploy.yaml
+- test-service.yaml
+- test-ingress.yaml

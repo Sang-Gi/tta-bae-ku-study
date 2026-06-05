@@ -1,0 +1,12 @@
+resources:
+- ../../base
+
+namePrefix: jjya-
+namespace: team-a-prod
+
+images:
+- name: nginxdemos/hello
+
+replicas:
+  - name: jjya-jjya
+    count: 5

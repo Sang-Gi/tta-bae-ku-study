@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jjya
+  namespace: team-a
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: jjya
+  template:
+    metadata:
+      labels:
+        app: jjya
+    spec:
+      containers:
+      - name: jjya
+        image: nginxdemos/hello
+        ports:
+        - containerPort: 80

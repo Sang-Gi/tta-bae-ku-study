@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jjya-service-lb
+  namespace: team-a
+spec:
+  type: ClusterIP
+  selector:
+    app: jjya
+  ports:
+    - port: 80
+      targetPort: 80

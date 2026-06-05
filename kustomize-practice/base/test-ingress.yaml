@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: jjya-ingress
+  namespace: team-a
+spec:
+  ingressClassName: nginx
+  rules:
+    - http:
+        paths:
+          - path: /prod
+            pathType: Prefix
+            backend:
+              service:
+                name: jjya-jjya-service-lb
+                port:
+                  number: 80
